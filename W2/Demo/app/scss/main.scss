@@ -1,0 +1,21 @@
+// @Author: thomasvanhoutte
+// @Date:   2016-10-12T11:39:15+02:00
+// @Last modified by:   thomasvanhoutte
+// @Last modified time: 2016-10-12T12:01:34+02:00
+import "./_variables.scss";
+
+body{
+  margin: 20px;
+}
+
+#main{
+  width: 100%;
+  margin: 5px auto;
+}
+
+#images{
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+  padding: 20px;
+}

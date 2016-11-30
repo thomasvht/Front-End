@@ -1,0 +1,42 @@
+<!--
+@Author: thomasvanhoutte
+@Date:   2016-11-09T10:59:53+01:00
+@Last modified by:   thomasvanhoutte
+@Last modified time: 2016-11-09T12:02:15+01:00
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlickrExplr</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+    <h1>FlickrExplr.</h1>
+
+   <div id="main">
+        <fieldset class="form-inline">
+            <legend>Filter...</legend>
+            <label for="filter">filter: </label>
+            <input type="text" placeholder="zoeken naar..." id="filter" class="form-control">
+            <button id="searchButton" class="btn btn-primary">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </fieldset>
+
+        <div id="images">
+            <ul class="image__list">
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="lib/kevinderudder.js"></script>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Week 1 Formulier</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <h1>Week 1: forumulier</h1>
+  <form class="form">
+    <fieldset>
+      <legend>Persoonlijke gegevens</legend>
+      <div class="form__group">
+        <label class="form__label" for="firstname">Voornaam</label>
+        <input class="form__control" type="text" id="firstname" required />
+      </div>
+      <div  class="form__group">
+        <label class="form__label" for="name">Naam</label>
+        <input class="form__control" type="text" id="name" required />
+      </div>
+      <div  class="form__group">
+        <label class="form__label" for="follower">Type</label>
+        <input type="radio" id="follower" name="type" />
+        <label class="form__label" for="follower">Follower</label>
+        <input type="radio" id="leader" name="type" />
+        <label class="form__label" for="leader">Leader</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact gegevens</legend>
+      <div  class="form__group">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__control" type="email" id="email" required />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Voorkeuren</legend>
+      <div  class="form__group">
+        <label class="form__label" for="profile">Profiel</label>
+        <select id="profileSelector" class="form__control" id="profile">
+          <option value="designer">designer</option>
+          <option value="developer">developer</option>
+          <option value="analyst">analyst</option>
+        </select>
+
+        <button id="addProfileButton" type="button" class="btn btn--round">
+          <span class="btn__icon">+</span>
+        </button>
+
+        <ul id="profileList" class="profileList">
+          <li class="profileList__profile">
+            <span>Developer</span>
+            <button class="btn">
+              <span class="btn__icon">x</span>
+            </button>
+          </li>
+        </ul>
+
+
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+</html>

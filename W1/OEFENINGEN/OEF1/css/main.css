@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+    font-family: "Helvetica Neue", "verdana", sans-serif;
+}
+
+fieldset{
+    margin: 10px 5px;
+}
+
+fieldset > legend{
+    color:gray;
+    font-size: 1.2em;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.form__group{
+    margin: 5px 0;
+}
+
+.form__label{
+    display: inline-block;
+    width: 100px;
+}
+
+.form__control{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid gray;
+
+}
+
+.form__control:invalid{
+    border-right: 2px solid red;
+}
+
+.btn{
+    background-color: #ff5a1d;
+    border: 1px solid #ff5a1d;
+    color: white;
+}
+
+.btn--round{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: .8em;
+}
+
+.btn__icon{
+    font-weight: bold;
+    position: relative;
+    bottom: 2.5px;
+    right: 1px;
+}
+
+.profileList__profile{
+    display: inline-block;
+    margin: 3px;
+    color: white;
+    background-color: #ff5a1d;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: .8em;
+}

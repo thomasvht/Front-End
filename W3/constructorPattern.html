@@ -1,0 +1,38 @@
+<!--
+@Author: thomasvanhoutte
+@Date:   2016-10-12T09:53:12+02:00
+@Last modified by:   thomasvanhoutte
+@Last modified time: 2016-10-12T10:10:37+02:00
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Constructor Pattern</title>
+  </head>
+  <body>
+    <script>
+    /* vroegere manier om het aanmaken van objecten
+    * var person = {
+    firstname: "Thomas",
+    email: "thomas@email.com"
+  };
+  */
+
+  function Person(fn, email){
+    // huidig object ==> this
+    this.firstname = fn;
+    this.email = email;
+  }
+
+  Person.prototype.toString = function(){
+    return this.firstname;
+  }
+    var t = new Person("Thomas", "thomas@email.com");
+    t.toString()
+    </script>
+  </body>
+</html>

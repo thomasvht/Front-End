@@ -1,0 +1,33 @@
+/**
+* @Author: thomasvanhoutte
+* @Date:   2016-10-19T09:53:23+02:00
+* @Last modified by:   thomasvanhoutte
+* @Last modified time: 2016-10-19T10:45:20+02:00
+*/
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+    font-family: "Helvetica Neue", "verdana", sans-serif;
+}
+
+fieldset{
+    margin:-10px;
+    border: 0;
+    border-left: 1px solid lightgray;
+}
+
+fieldset > legend{
+    color:gray;
+    font-size: 1.2em;
+    border-bottom: 1px solid lightgray;
+    width: 20%;
+}
+form{
+  margin: 20px;
+}

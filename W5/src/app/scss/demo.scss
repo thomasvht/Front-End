@@ -1,0 +1,35 @@
+@import "_variables.scss";
+
+body{
+  background-color: $background-color;
+  margin: 20px;
+}
+
+#main{
+  width: 100%;
+  margin: 5px auto;
+
+  > aside{
+    color: blue;
+
+    .navigation{
+      .navigation__link{
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+#images{
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+  padding: 20px;
+}

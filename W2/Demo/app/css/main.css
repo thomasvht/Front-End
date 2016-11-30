@@ -1,0 +1,22 @@
+/**
+* @Author: thomasvanhoutte
+* @Date:   2016-10-05T10:22:20+02:00
+* @Last modified by:   thomasvanhoutte
+* @Last modified time: 2016-10-12T11:21:12+02:00
+*/
+
+body{
+  margin: 20px;
+}
+
+#main{
+  width: 100%;
+  margin: 5px auto;
+}
+
+#images{
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+  padding: 20px;
+}

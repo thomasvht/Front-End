@@ -1,0 +1,21 @@
+body {
+  background-color: blue;
+  margin: 20px; }
+
+#main {
+  width: 100%;
+  margin: 5px auto; }
+  #main > aside {
+    color: blue; }
+    #main > aside .navigation .navigation__link {
+      text-decoration: none; }
+      #main > aside .navigation .navigation__link:hover {
+        text-decoration: underline; }
+
+#images {
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+  padding: 20px; }
+
+/*# sourceMappingURL=demo.css.map */

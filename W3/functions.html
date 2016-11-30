@@ -1,0 +1,77 @@
+<!--
+@Author: thomasvanhoutte
+@Date:   2016-10-12T09:16:02+02:00
+@Last modified by:   thomasvanhoutte
+@Last modified time: 2016-10-12T09:53:39+02:00
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+    /* DEEL 1 */
+    function som1(a,b){
+      return a + b;
+    }
+    var result = som1(5,8);
+    var result2 = som1(5); // => geeft een NaN
+    console.log("DEEL 1 : " + result2);
+
+    /* DEEL 2 */
+    function som2(a,b){
+      return a + b;
+    }
+    var result = som2(5,8);
+    var result2 = som2(5); // => geeft een NaN
+    console.log("DEEL 2 : " + result2);
+
+    /* DEEL 3 */
+    function som3(){
+      var i, l = arguments.length;
+      for(i=0; i<l; i++){
+        result += arguments[i];
+      }
+    }
+
+      var result = som3(5,8,8,5,9,3);
+      var result2 = som3(5);
+      console.log("DEEL 3 : " + result);
+      console.log("DEEL 3 : " + result2);
+
+    /* DEEL 4 */
+    var onSucces = function(){};
+    var onError = function(){};
+    var onSave = function(){};
+
+    var url = "";
+    var xmlHTTP = new XMLHttpRequest();
+    xmlHTTP.open("GET", url);
+    xmlHTTP.onload = function(){};
+    xmlHTTP.onError = onError;
+
+    var btn = document.getElementById("saveButton");
+    btn.addEventListener("click", onSave);
+
+    function outerFunction(){
+      console.log("outer function");
+      var variableOuterfunction = 42;
+      //return 12;  geeft een getal terug
+      // return []; geeft een array terug
+      // return function(){ console.log("inner function");}; geeft een functie terug
+      return function(){
+        var variableInnerfunction = "AB";
+        console.log("inner funciton: " + variableOuterfunction);
+        // je kan altijd naar boven in de tree maar niet naar beneden
+      };
+    };
+    var result = outerFunction();
+
+    </script>
+  </body>
+</html>
