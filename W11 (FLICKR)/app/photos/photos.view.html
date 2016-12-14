@@ -1,0 +1,23 @@
+<!--
+@Author: thomasvanhoutte
+@Date:   2016-12-14T09:12:17+01:00
+@Last modified by:   thomasvanhoutte
+@Last modified time: 2016-12-14T10:04:51+01:00
+-->
+
+
+
+<form novalidate>
+  <input
+    type="text"
+    placeholder="search photos ..."
+    required
+    name="q"
+    [(ngModel)]="q">
+    <button class="button" (click)="search()">Search</button>
+  </form>
+<div class="photos">
+  <div *ngFor="let p of photos" class="photos_photo">
+    <photo url="{{p.url}}" title="{{p.title}}"></photo>
+</div>
+</div>
