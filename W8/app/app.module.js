@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var login_component_1 = require("./Login/login.component");
+var app_component_1 = require("./app.component");
 var forms_1 = require("@angular/forms");
-var Login_1 = require("./Login");
+var subscribe_component_1 = require("./Subscribe/subscribe.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,9 +21,9 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, Login_1.Login],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
+        declarations: [app_component_1.AppComponent, login_component_1.LoginComponent, subscribe_component_1.SubscribeNewsLetter],
+        bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);

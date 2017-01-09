@@ -1,3 +1,9 @@
+/**
+* @Author: thomasvanhoutte
+* @Date:   2017-01-05T18:36:36+01:00
+* @Last modified by:   thomasvanhoutte
+* @Last modified time: 2017-01-09T14:21:22+01:00
+*/
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
+            template: "\n  <h1>Hello {{name}}</h1>\n  <login></login>\n  <subscribe></subscribe>\n  ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
