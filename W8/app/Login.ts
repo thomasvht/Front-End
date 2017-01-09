@@ -2,16 +2,7 @@
 * @Author: thomasvanhoutte
 * @Date:   2016-11-23T12:04:04+01:00
 * @Last modified by:   thomasvanhoutte
-* @Last modified time: 2016-11-28T23:25:13+01:00
-*/
-
-
-
-/**
-* @Author: thomasvanhoutte
-* @Date:   2016-11-23T11:11:19+01:00
-* @Last modified by:   thomasvanhoutte
-* @Last modified time: 2016-11-28T23:25:13+01:00
+* @Last modified time: 2017-01-08T14:38:06+01:00
 */
 import {Component} from '@angular/core';
 
